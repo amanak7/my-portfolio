@@ -1,0 +1,92 @@
+
+.contact__heading{
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: var(--weight-800);
+    font-family: var(--body-font);
+   margin-top: 40px;
+}
+
+.contact__heading::after{
+content: "Touch";
+color:  hsl(271, 76%, 53%);
+margin: 15px;
+}
+
+.content{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+        left:5vw;
+       width:80vw;
+}
+.location,.call,.mail{
+    position: relative;
+    top: -24px;
+    left:27px;
+}
+.link{
+    display: flex; 
+    position: relative;
+    left: 2vw;
+}
+
+.site{
+    margin-right: 15px;
+    position: relative;
+    left: 10%;
+    margin-bottom: 10px;
+}
+.iconl{
+    color: var(--text-color);
+    font-size:30px;
+}
+.iconl:hover,
+.intial:hover{
+    color:  hsl(271, 76%, 53%);
+}
+.icon{
+    color:  hsl(271, 76%, 53%);
+}
+.map{
+    background:url(../../assets/Screenshot\ \(155\).png);
+    background-size: cover;
+    width: 55vw;
+    height: 25vh;
+   
+    position: relative;
+    left:4vw;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 0 8px hsla(0,0%,0%,0.3);
+}
+
+.intial{
+    color: rgb(171, 110, 227);
+    font-size: 50px;
+    position: relative;
+    left:40vw;
+    width: 50px;
+    top:40px;
+}
+
+@media screen and (max-width:1024px){
+    .content{
+        display: flex;
+        flex-direction: column;
+      }
+      .map{
+        background-color: aqua;
+        width: 60vw;
+        position: relative;
+        left:4vw;
+        margin-top:30px;
+    }
+    .detail{
+        width: 40vw;
+    }
+}

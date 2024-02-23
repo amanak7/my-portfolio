@@ -1,0 +1,14 @@
+.darkmode__btn{
+    position: fixed;
+    font-size: 25px;
+    z-index: 1;
+     
+      left: 4%;
+      top: 5%;
+    transition: all 0.5s ease;
+   
+}
+
+/* .darkmode__btn:hover{
+    font-size: 30px;
+} */
